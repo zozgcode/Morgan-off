@@ -38,7 +38,7 @@ export default function Login() {
               src="https://i.imgur.com/jodPSnj.png"
               width={100}
               height={100}
-              className="w-[130px] h-[130px]"
+              className="w-[120px] h-[120px]"
               alt="logo"
             />
           </div>
@@ -53,34 +53,32 @@ export default function Login() {
           
           <div className="bg-white border mx-auto rounded-xl max-w-[400px] p-4">
             <form onSubmit={handleLogin}>
-              <div className="flex flex-col gap-6">
-                <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-2">
                   <label
                     htmlFor="Username"
-                    className="text-[#5c5c5c] hidden text-[16px]"
+                    className="text-[#5c5c5c] text-[16px]"
                   >
                     Username
                   </label>
                   <input
                     type="text"
                     value={username}
-                    placeholder="Username"
-                    className="p-4 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
+                    className="p-4 py-3 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
                     onChange={(e) => setUsername(e.target.value)}
                   />
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-2">
                   <label
                     htmlFor="password"
-                    className="text-[#5c5c5c] hidden text-[16px]"
+                    className="text-[#5c5c5c] text-[16px]"
                   >
                     Password
                   </label>
                   <input
                     type="password"
                     value={password}
-                    placeholder="Password"
-                    className="p-4 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
+                    className="p-4 py-3 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
@@ -89,7 +87,7 @@ export default function Login() {
               <div className="flex flex-col gap-2 mt-6">
                 <button
                   type="submit"
-                  className="p-4 bg-[#B21D6E] text-white font-semibold w-full rounded-[10px]"
+                  className="p-4 py-3 bg-[#B21D6E] text-white font-semibold w-full rounded-[10px]"
                 >
                   Sign in
                 </button>

@@ -47,8 +47,8 @@ export default function Dashboard() {
       <Header handleLogout={handleLogout} user={user} />
       <div className="w-[100%] p-[20px] bg-[#B21D6E] relative">
         <div className="text-white text-[14px]">
-        {hour >= 12 ? (hour >= 17 ? "Good evening" : "Good afternoon") : "Good morning"} {user.holder.jointNames && <br /> }
-        {user.holder.jointNames ? <span className="font-[800]"> {user.holder.jointNames}</span> : <span className="font-[800]"> {user.holder.firstName}</span> }
+        {hour >= 12 ? (hour >= 17 ? "Good evening" : "Good afternoon") : "Good morning"} {user.holder.jointNames && <><br /> <span className=" text-lg">Joint account of: <br /></span></> }
+        {user.holder.jointNames ? <span className="font-medium text-lg"> {user.holder.jointNames}</span> : <span className="font-medium text-lg"> {user.holder.firstName}</span> }
           <br />
           {currentDate}
           <div className="flex items-center gap-[10px] mt-[10px]">

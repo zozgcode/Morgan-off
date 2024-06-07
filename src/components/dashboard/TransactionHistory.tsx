@@ -32,7 +32,7 @@ const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user }) => {
                 <span>{transaction.dateTime}</span>
               </div>
               <div className="flex justify-between items-center text-[14px] uppercase font-[500] text-gray-800">
-                <span>{transaction.description}</span>
+                <span className="text-[13px]">{transaction.description}</span>
                 <span className={`${transaction.amount_usd < 0 ? "text-red-600" : ""}`}>{formatCurrency(transaction.amount_usd)}</span>
               </div>
               <div className="flex justify-between items-center text-[10px] uppercase font-[300] text-gray-800">
