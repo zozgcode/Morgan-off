@@ -64,7 +64,7 @@ export default function Login() {
                   <input
                     type="text"
                     value={username}
-                    className="p-4 py-3 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
+                    className="p-4 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
                     onChange={(e) => setUsername(e.target.value)}
                   />
                 </div>
@@ -78,7 +78,7 @@ export default function Login() {
                   <input
                     type="password"
                     value={password}
-                    className="p-4 py-3 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
+                    className="p-4 rounded-[10px] text-[#5c5c5c] bg-transparent border border-gray-300 outline-none"
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
@@ -87,7 +87,7 @@ export default function Login() {
               <div className="flex flex-col gap-2 mt-6">
                 <button
                   type="submit"
-                  className="p-4 py-3 bg-[#B21D6E] text-white font-semibold w-full rounded-[10px]"
+                  className="p-4 bg-[#B21D6E] text-white font-semibold w-full rounded-[10px]"
                 >
                   Sign in
                 </button>

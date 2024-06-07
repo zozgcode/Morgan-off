@@ -35,6 +35,7 @@ export default function Transfer() {
   } | null>(null);
   // const [selectedBank, setSelectedBank] = useState<string | null>(null);
   const [amount, setAmount] = useState<string>("");
+  const [routingNo, setRoutingNo] = useState<string>("");
   const [error, setError] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
@@ -51,7 +52,7 @@ export default function Transfer() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!selectedBank || !amount) {
+    if (!selectedBank || !amount || !routingNo) {
       setError("Please fill out all fields");
     } else {
       setError("");
@@ -90,9 +91,9 @@ export default function Transfer() {
           <>
             <div className="w-[90%] mx-auto py-[20px]">
               <p className="text-[14px] text-center text-zinc-700">
-                You are about to transfer {formatAmount(amount)} to &nbsp;
+                You are about to transfer {formatAmount(amount)} to&nbsp;
                 <span className="uppercase font-[600]">
-                  {selectedBank?.label}
+                  {routingNo}
                 </span>
                 &nbsp;from your&nbsp;
                 <span className="font-[500]">CHECKING ACCOUNT</span><br />
@@ -135,6 +136,18 @@ export default function Transfer() {
             Checking ACCOUNT(...1212)
           </span>
           <MdOutlineKeyboardArrowRight />
+        </div>
+      </div>
+      <div className="w-[90%] mx-auto py-[10px] border-b">
+        <span className="text-zinc-500 text-[12px]">Routing Number</span>
+        <div className="relative flex justify-between items-center">
+          <input
+            type="number"
+            className="w-full outline-none"
+            name="amount"
+            value={routingNo}
+            onChange={(e) => setRoutingNo(e.target.value)}
+          />
         </div>
       </div>
       <div className="w-[90%] mx-auto py-[10px] border-b">

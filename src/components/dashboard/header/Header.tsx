@@ -37,7 +37,8 @@ export default function Header({ handleLogout, user }: any) {
         {open && (
           <div className="absolute z-50 shadow bg-white rounded-md right-0 flex flex-col justify-center border border-[#B21D6E] gap-[5px]">
             <p className="text-[14px] px-[15px] py-[5px] whitespace-nowrap font-medium text-[#B21D6E]">
-              {user.holder.firstName}&nbsp;{user.holder.lastName}
+              {user.holder.jointNames ? "" : `${user.holder.firstName} ${user.holder.lastName}`}
+              
             </p>
             <p
               className="text-[14px] m-1 px-[15px] text-center rounded-md py-[5px] bg-[#B21D6E] border whitespace-nowrap text-white"

@@ -34,7 +34,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({ options, placeholder, o
         <MdKeyboardArrowDown />
       </div>
       {isOpen && (
-        <div className="absolute w-full rounded mt-1 bg-white z-10">
+        <div className="absolute w-full h-[350px] border p-2 overflow-x-auto rounded mt-1 bg-white z-10">
           {options.map((option) => (
             <div
               key={option.value}
