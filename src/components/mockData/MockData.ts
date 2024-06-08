@@ -8,7 +8,7 @@ export const mockAccounts: Account[] = [
       lastName: 'Adrian',
       jointNames: 'Anthony Adrian & Thomas Work',
       username: 'Adrianwork01',
-      password: 'Thankful002',
+      password: 'Thankful',
     },
     bank_details: {
       bank_name: 'Bank of Springfield',
