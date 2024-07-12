@@ -7,8 +7,11 @@ export const mockAccounts: Account[] = [
       firstName: 'Anthony',
       lastName: 'Adrian',
       jointNames: 'Anthony Adrian & Thomas Work',
-      username: 'Adrianwork01-0000054546500000000',
-      password: 'Thankful-0000054546500000000',
+      username: 'Adrianwork01',
+      password: 'Thankful',
+      createdAt: '',
+      accountDeactivate: '',
+      accountActivate: '7/12/2024 D/M/Y',
     },
     bank_details: {
       bank_name: 'Bank of Springfield',
@@ -38,6 +41,9 @@ export const mockAccounts: Account[] = [
       jointNames: '',
       username: 'LesRi228',
       password: 'Thankfules',
+      createdAt: '',
+      accountDeactivate: '',
+      accountActivate: '',
     },
     bank_details: {
       bank_name: 'Bank of Springfield',

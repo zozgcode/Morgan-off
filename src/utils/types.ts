@@ -7,6 +7,9 @@ export interface Account {
     jointNames?: string;
     username: string;
     password: string;
+    createdAt?: string;
+    accountDeactivate?: string;
+    accountActivate?: string;
   };
   bank_details: {
     bank_name: string;
